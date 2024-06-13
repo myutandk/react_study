@@ -6,8 +6,8 @@ import {CompleteTodos} from "./components/CompleteTodos";
 
 export const Todo = () => {
     const [todoText, setTodoText] = useState("")
-    const [incompleteTodos, setIncompleteTodos] = useState([]);
-    const [completeTodos, setCompleteTodos] = useState([]);
+    const [incompleteTodos, setIncompleteTodos] = useState([ ]);
+    const [completeTodos, setCompleteTodos] = useState([ ]);
 
     const onChangeTodoText = (event) => setTodoText(event.target.value);
     const onClickAdd = () => {
@@ -51,7 +51,7 @@ export const Todo = () => {
                 onClickDeleteIncomplete={onClickDeleteInComplete}/>
             <CompleteTodos
                 completeTodos={completeTodos}
-                onClickIncomplete={onClickReturn}
+                onClickReturn={onClickReturn}
                 onClickDeleteComplete={onClickDeleteComplete}/>
         </>
     );
