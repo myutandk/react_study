@@ -4,7 +4,7 @@ const style = {
     height: "50px",
     padding: "8px",
     margin: "8px",
-    borderRadius: "8px"
+    borderRadius: "8px",
 }
 
 export const InputTodo = (props) => {

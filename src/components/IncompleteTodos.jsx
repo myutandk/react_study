@@ -13,7 +13,7 @@ export const IncompleteTodos = (props) => {
                                 <button onClick={() => onClickDeleteIncomplete(index)}>削除</button>
                             </div>
                         </li>
-                    ))};
+                    ))}
             </ul>
         </div>
     );
